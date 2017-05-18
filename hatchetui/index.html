@@ -1,0 +1,318 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>开始使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+		<link rel="stylesheet" href="../gitbook/style.css">
+        <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+        <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+		<link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-vuejs/vue.css">
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+		<link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+		<link rel="next" href="hatchetframework-ui.html" />
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">      
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+                <nav role="navigation">
+<ul class="summary">
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    基础说明
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1.1" data-path="./">
+            
+                <a href="./">                  
+                    开始使用            
+                </a>
+        </li>
+        <li class="chapter " data-level="1.1.2" data-path="hatchetframework-ui.html">
+                <a href="hatchetframework-ui.html">
+                    页面元素
+                </a> 
+        </li>
+            </ul>  
+        </li>
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    内置组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="hatchetframework-tabletree.html">
+            
+                <a href="hatchetframework-tabletree.html">
+            
+                    
+                    树插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="hatchetframework-table.html">
+            
+                <a href="hatchetframework-table.html">
+            
+                    
+                    表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="hatchetframework-fileupload.html">
+            
+                <a href="hatchetframework-fileupload.html">
+            
+                    
+                    图片上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >开始使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hatchet-ui">hatchet-ui</h1>
+<h2 id="html">HTML</h2>
+<ul>
+<li>&#x5F15;&#x5165;css&#x548C;js<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;js/hatchetframework/hatchetframework-menu/hatchetframework-menu.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;js/hatchetframework/hatchetframework-tab/hatchetframework-tab.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;js/lib/jquery/jquery-1.8.3.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;js/hatchetframework/hatchetframework-map/hatchetframework-map.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;js/hatchetframework/hatchetframework-menu/hatchetframework-menu.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;js/hatchetframework/hatchetframework-tab/hatchetframework-tab.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+</li>
+<li>&#x5B9A;&#x4E49;&#x5143;&#x7D20;<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;header-top&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;logo&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span>&gt;</span>logo<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user-name blue-theme &quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>123@qq.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line&quot;</span>&gt;</span>|<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span>&gt;</span>&#x9000;&#x51FA;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user-name&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              &#x9000;&#x51FA;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;frame-nav&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navtree&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;navtree&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;right-main&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right-main&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&apos;100%&apos;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&apos;99%&apos;</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">&apos;0&apos;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&apos;views/home-content.html&apos;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&apos;home-content&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="js">JS</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> Menu,MenuTab,map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+<span class="hljs-keyword">var</span> options = {
+    skin: <span class="hljs-string">&apos;blue-theme&apos;</span>,
+    dataUrl:<span class="hljs-string">&apos;getMenuListByUserId.jhtml&apos;</span>,
+    tab: <span class="hljs-literal">true</span>
+};
+
+$(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    Menu = <span class="hljs-keyword">new</span> HatchetFramework.Menu(<span class="hljs-string">&quot;#navtree&quot;</span>, options);
+    MenuTab = <span class="hljs-keyword">new</span> HatchetFramework.Tab();
+});
+</code></pre>
+<h2 id="&#x57FA;&#x672C;&#x53C2;&#x6570;">&#x57FA;&#x672C;&#x53C2;&#x6570;</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> HatchetFramework.Menu(id, options);
+</code></pre>
+<h2 id="options---&#x914D;&#x7F6E;&#x53C2;&#x6570;">options - &#x914D;&#x7F6E;&#x53C2;&#x6570;</h2>
+<p>&#x7C7B;&#x578B;&#xFF1A;json</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5C5E;&#x6027;</th>
+<th style="text-align:center">&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">skin</td>
+<td style="text-align:center">&apos;blue-theme&apos;&#x548C;&apos;gray-theme&apos;&#x4E24;&#x79CD;&#x76AE;&#x80A4;</td>
+</tr>
+<tr>
+<td style="text-align:center">dataUrl</td>
+<td style="text-align:center">&#x6570;&#x636E;&#x94FE;&#x63A5;</td>
+</tr>
+<tr>
+<td style="text-align:center">tab</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x663E;&#x793A;&#x9876;&#x90E8;&#x5BFC;&#x822A;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="hatchetframework-ui.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 页面元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"开始使用","level":"1.1.1","depth":2,"next":{"title":"页面元素","level":"1.1.2","depth":2,"path":"hatchetframework-ui.md","ref":"hatchetframework-ui.md","articles":[]},"previous":{"title":"基础说明","level":"1.1","depth":1,"ref":"","articles":[{"title":"开始使用","level":"1.1.1","depth":2,"path":"README.md","ref":"README.md","articles":[]},{"title":"页面元素","level":"1.1.2","depth":2,"path":"hatchetframework-ui.md","ref":"hatchetframework-ui.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-edit-link","theme-vuejs@git+https://github.com/pearofducks/gitbook-plugin-theme-vuejs.git","-fontsettings","-github","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://weblgdong.github.io/hatchetui/"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-vuejs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","links":{"sharing":{"facebook":false,"twitter":false}},"gitbook":">3.0.0","description":"hatchet-ui"},"file":{"path":"README.md","mtime":"2017-05-18T02:54:14.039Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-18T06:14:03.412Z"},"basePath":".","book":{"language":"hatchetui"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
